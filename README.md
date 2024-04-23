@@ -1,9 +1,11 @@
 <div align="center">
     <a href="https://bedenkerlabs.com"><h1 align="center">BedenkerLabs.com</h1></a>
 
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
+Our corporate website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
 
 </div>
+
+## We believe firmly on not reinventing the wheel - Fork and Use - Thanks to chronark!
 
 <br/>
 
