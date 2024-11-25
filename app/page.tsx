@@ -35,14 +35,14 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          [NOW]: We building {" "}
+          [NOW]: You can get a  {" "}
           <Link
             target="_blank"
-            href="https://lokiparty.com.py"
+            href="https://market.crea.la/product/fantastico-menu-online-para-recibir-tus-pedidos-directamente-en-whatsapp"
             className="underline duration-500 hover:text-zinc-300"
           >
-            lokiparty.com.py
-          </Link>, a new online store to get orders and enroll payments with local provider.
+            Online Ordering System
+          </Link>! Start receiving unlimited orders DIRECTLY on WhatsApp with ZERO COMMISSIONS.
         </h2>
       </div>
     </div>
