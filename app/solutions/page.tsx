@@ -5,219 +5,188 @@ import Link from "next/link";
 
 export default function Solutions() {
 	return (
-		<div className="min-h-screen">
+		<div className="min-h-screen bg-[#fafafa]">
 			<Navigation />
 			
 			{/* Hero Section */}
-			<div className="relative h-[60vh] flex items-center justify-center">
-				<Image
-					src="/hero-background.jpg" 
-					alt="Hero background"
-					fill
-					className="object-cover brightness-50"
-				/>
-				<div className="relative z-10 text-center px-4">
-					<h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-						Recibí tus pedidos por WhatsApp
+			<div className="relative h-[80vh] flex items-center justify-center bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+				<div className="relative z-10 text-center px-4 max-w-4xl">
+					<h1 className="text-5xl md:text-7xl font-light text-white mb-6 tracking-tight">
+						Receive Orders via WhatsApp
 					</h1>
-					<p className="text-xl md:text-2xl text-white">
-						Y olvidate de los intermediarios
+					<p className="text-xl md:text-2xl text-gray-300 font-light">
+						Skip the middleman. Connect directly with your customers.
 					</p>
 				</div>
 			</div>
 
 			{/* Solutions Section */}
-			<div className="container mx-auto py-20 px-4">
-				<div className="grid md:grid-cols-2 gap-8">
-					{/* Restaurante */}
-					<div className="relative group overflow-hidden rounded-lg">
-						<Image
-							src="/restaurant.jpg" 
-							alt="Restaurante"
-							width={600}
-							height={400}
-							className="object-cover w-full h-[400px] transition-transform duration-300 group-hover:scale-105"
-						/>
-						<div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-							<Link
-								href="/restaurant"
-								className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-white/90 transition-colors"
-							>
-								Tengo un restaurante
-							</Link>
+			<div className="container mx-auto py-32 px-4">
+				<div className="grid md:grid-cols-2 gap-12">
+					{/* Restaurant */}
+					<div className="group">
+						<div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
+							<Image
+								src="/restaurant.jpg"
+								alt="Restaurant"
+								fill
+								className="object-cover transition-transform duration-700 group-hover:scale-105"
+							/>
+							<div className="absolute inset-0 bg-black/40 backdrop-blur-sm">
+								<div className="h-full flex items-center justify-center">
+									<Link
+										href="/restaurant"
+										className="px-12 py-5 bg-white/10 border border-white/20 text-white backdrop-blur-md rounded-full hover:bg-white/20 transition-all duration-300"
+									>
+										I Have a Restaurant
+									</Link>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					{/* Tienda */}
-					<div className="relative group overflow-hidden rounded-lg">
-						<Image
-							src="/store.jpg" 
-							alt="Tienda"
-							width={600}
-							height={400}
-							className="object-cover w-full h-[400px] transition-transform duration-300 group-hover:scale-105"
-						/>
-						<div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-							<Link
-								href="/store"
-								className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-white/90 transition-colors"
-							>
-								Tengo una tienda
-							</Link>
+					{/* Store */}
+					<div className="group">
+						<div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
+							<Image
+								src="/store.jpg"
+								alt="Store"
+								fill
+								className="object-cover transition-transform duration-700 group-hover:scale-105"
+							/>
+							<div className="absolute inset-0 bg-black/40 backdrop-blur-sm">
+								<div className="h-full flex items-center justify-center">
+									<Link
+										href="/store"
+										className="px-12 py-5 bg-white/10 border border-white/20 text-white backdrop-blur-md rounded-full hover:bg-white/20 transition-all duration-300"
+									>
+										I Have a Store
+									</Link>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			{/* Features Section */}
-			<div className="bg-gray-50 py-20 px-4">
+			<div className="py-32 px-4 bg-white">
 				<div className="container mx-auto">
-					<h2 className="text-4xl font-bold text-center mb-16">
-						Todo lo que necesitás para vender online
+					<h2 className="text-4xl font-light text-center mb-24 tracking-tight">
+						Everything you need to sell online
 					</h2>
 					
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{/* Tienda Profesional */}
-						<div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-							<div className="text-3xl mb-4">🏪</div>
-							<h3 className="text-xl font-semibold mb-3">Tienda Profesional</h3>
-							<p className="text-gray-600">Lista en 7 días, diseñada profesionalmente para tu negocio</p>
-						</div>
-
-						{/* Dominio */}
-						<div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-							<div className="text-3xl mb-4">🌐</div>
-							<h3 className="text-xl font-semibold mb-3">Dominio Gratis</h3>
-							<p className="text-gray-600">Dominio personalizado incluido o conectá el tuyo propio</p>
-						</div>
-
-						{/* Mantenimiento */}
-						<div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-							<div className="text-3xl mb-4">🔧</div>
-							<h3 className="text-xl font-semibold mb-3">Mantenimiento Técnico</h3>
-							<p className="text-gray-600">Nos encargamos de mantener tu sitio actualizado y funcionando</p>
-						</div>
-
-						{/* WhatsApp Integration */}
-						<div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-							<div className="text-3xl mb-4">📱</div>
-							<h3 className="text-xl font-semibold mb-3">Integración con WhatsApp</h3>
-							<p className="text-gray-600">Sistema de reservas y carrito 24/7 directo a tu WhatsApp</p>
-						</div>
-
-						{/* Sin Comisiones */}
-						<div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-							<div className="text-3xl mb-4">💰</div>
-							<h3 className="text-xl font-semibold mb-3">0% de Comisión</h3>
-							<p className="text-gray-600">No cobramos comisión por tus ventas online</p>
-						</div>
-
-						{/* Capacitación */}
-						<div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-							<div className="text-3xl mb-4">🎯</div>
-							<h3 className="text-xl font-semibold mb-3">Capacitación Gratuita</h3>
-							<p className="text-gray-600">Llamada personal de capacitación y lanzamiento</p>
-						</div>
+					<div className="grid md:grid-cols-3 gap-12">
+						{features.map((feature, index) => (
+							<div key={index} className="group p-8 rounded-2xl transition-all duration-300 hover:bg-gray-50">
+								<div className="text-3xl mb-6">{feature.icon}</div>
+								<h3 className="text-xl font-medium mb-4">{feature.title}</h3>
+								<p className="text-gray-600 leading-relaxed">{feature.description}</p>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>
 
-			{/* CTA Section con nuevo gradiente */}
-			<div className="bg-gradient-to-r from-[#ffffff4d] to-[#2563eb] py-16 px-4">
-				<div className="container mx-auto text-center">
-					<h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-						¿Listo para empezar a vender online?
+			{/* CTA Section */}
+			<div className="relative py-32 px-4 overflow-hidden">
+				<div className="absolute inset-0 bg-gradient-to-r from-[#000000] to-[#1a1a1a]" />
+				<div className="container mx-auto relative z-10 text-center">
+					<h2 className="text-4xl md:text-5xl font-light text-white mb-8 tracking-tight">
+						Ready to start selling online?
 					</h2>
-					<p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-						Obtené tu tienda profesional con todas las herramientas que necesitás para hacer crecer tu negocio
+					<p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto font-light">
+						Get your professional store with all the tools you need to grow your business
 					</p>
 					<Link
 						href="/contact"
-						className="inline-block px-8 py-4 bg-white text-[#2563eb] font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+						className="inline-block px-12 py-5 bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300"
 					>
-						Contactanos Ahora
+						Contact Us Now
 					</Link>
 				</div>
 			</div>
 
-			{/* Testimonials Section */}
-			<div className="py-20 px-4 bg-white">
+			{/* Testimonials */}
+			<div className="py-32 px-4 bg-white">
 				<div className="container mx-auto">
-					<h2 className="text-4xl font-bold text-center mb-16">
-						Lo que dicen nuestros clientes
+					<h2 className="text-4xl font-light text-center mb-24 tracking-tight">
+						What our clients say
 					</h2>
-					<div className="grid md:grid-cols-3 gap-8">
-						{/* Testimonio 1 - Marcos */}
-						<div className="bg-gray-50 p-6 rounded-xl shadow-lg">
-							<div className="flex flex-col items-center">
-								<div className="w-20 h-20 relative mb-4">
-									<Image
-										src="/testimonials/marcos.jpg"
-										alt="Marcos"
-										width={80}
-										height={80}
-										className="rounded-full object-cover"
-									/>
-								</div>
-								<h3 className="text-xl font-semibold mb-2">Marcos</h3>
-								<p className="text-gray-600 text-center">
-									"Desde que implementé la tienda online, mis ventas aumentaron un 40%. 
-									La integración con WhatsApp hace todo más fácil y personal."
-								</p>
-								<div className="text-[#2563eb] mt-4">
-									★★★★★
+					<div className="grid md:grid-cols-3 gap-12">
+						{testimonials.map((testimonial, index) => (
+							<div key={index} className="p-8 rounded-2xl bg-gray-50">
+								<div className="flex flex-col items-center">
+									<div className="w-20 h-20 relative mb-6">
+										<Image
+											src={testimonial.image}
+											alt={testimonial.name}
+											fill
+											className="rounded-full object-cover"
+										/>
+									</div>
+									<h3 className="text-xl font-medium mb-4">{testimonial.name}</h3>
+									<p className="text-gray-600 text-center leading-relaxed">
+										{testimonial.quote}
+									</p>
+									<div className="text-gray-400 mt-6">★★★★★</div>
 								</div>
 							</div>
-						</div>
-
-						{/* Testimonio 2 - Mercedes */}
-						<div className="bg-gray-50 p-6 rounded-xl shadow-lg">
-							<div className="flex flex-col items-center">
-								<div className="w-20 h-20 relative mb-4">
-									<Image
-										src="/testimonials/mercedes.jpg" 
-										alt="Mercedes"
-										width={80}
-										height={80}
-										className="rounded-full object-cover"
-									/>
-								</div>
-								<h3 className="text-xl font-semibold mb-2">Mercedes</h3>
-								<p className="text-gray-600 text-center">
-									"La capacitación gratuita fue excelente. En una semana ya estaba 
-									manejando mi tienda como una profesional."
-								</p>
-								<div className="text-[#2563eb] mt-4">
-									★★★★★
-								</div>
-							</div>
-						</div>
-
-						{/* Testimonio 3 - Maria */}
-						<div className="bg-gray-50 p-6 rounded-xl shadow-lg">
-							<div className="flex flex-col items-center">
-								<div className="w-20 h-20 relative mb-4">
-									<Image
-										src="/testimonials/maria.jpg" 
-										alt="Maria"
-										width={80}
-										height={80}
-										className="rounded-full object-cover"
-									/>
-								</div>
-								<h3 className="text-xl font-semibold mb-2">José</h3>
-								<p className="text-gray-600 text-center">
-									"Lo mejor es no tener que pagar comisiones. El sistema de pedidos 
-									por WhatsApp funciona perfectamente."
-								</p>
-								<div className="text-[#2563eb] mt-4">
-									★★★★★
-								</div>
-							</div>
-						</div>
+						))}
 					</div>
 				</div>
 			</div>
 		</div>
 	);
 }
+
+const features = [
+	{
+		icon: "🏪",
+		title: "Professional Store",
+		description: "Ready in 7 days, professionally designed for your business"
+	},
+	{
+		icon: "🌐",
+		title: "Free Domain",
+		description: "Custom domain included or connect your own"
+	},
+	{
+		icon: "🔧",
+		title: "Technical Maintenance",
+		description: "We keep your site up-to-date and running smoothly"
+	},
+	{
+		icon: "📱",
+		title: "WhatsApp Integration",
+		description: "24/7 booking and cart system direct to your WhatsApp"
+	},
+	{
+		icon: "💰",
+		title: "0% Commission",
+		description: "We don't charge commission on your online sales"
+	},
+	{
+		icon: "🎯",
+		title: "Free Training",
+		description: "Personal training and launch call included"
+	}
+];
+
+const testimonials = [
+	{
+		name: "Mark",
+		image: "/testimonials/marcos.jpg",
+		quote: "Since implementing the online store, my sales increased by 40%. The WhatsApp integration makes everything easier and more personal."
+	},
+	{
+		name: "Mercedes",
+		image: "/testimonials/mercedes.jpg",
+		quote: "The free training was excellent. Within a week I was managing my store like a professional."
+	},
+	{
+		name: "Joseph",
+		image: "/testimonials/jose.jpg",
+		quote: "The best part is not having to pay commissions. The WhatsApp ordering system works perfectly."
+	}
+];
