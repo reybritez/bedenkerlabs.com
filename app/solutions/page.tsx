@@ -112,6 +112,72 @@ export default function Solutions() {
 					</Link>
 				</div>
 			</div>
+
+			{/* Footer Section */}
+			<footer className="w-full border-t border-zinc-800 mt-16 pt-16 pb-8">
+				<div className="container mx-auto px-4">
+					<div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+						{/* Company Info */}
+						<div>
+							<h3 className="text-zinc-100 font-medium text-lg mb-4">Bedenker Labs</h3>
+							<p className="text-zinc-400 text-sm">
+								Helping businesses grow through technology and innovation.
+							</p>
+						</div>
+
+						{/* Social Links - basado en contact/page.tsx */}
+						<div>
+							<h3 className="text-zinc-100 font-medium text-lg mb-4">Connect</h3>
+							<div className="space-y-3">
+								{socials.map((social) => (
+									<Link
+										key={social.label}
+										href={social.href}
+										target="_blank"
+										className="flex items-center gap-2 text-zinc-400 hover:text-zinc-100 transition-colors"
+									>
+										{social.icon}
+										<span className="text-sm">{social.handle}</span>
+									</Link>
+								))}
+							</div>
+						</div>
+
+						{/* Quick Links */}
+						<div>
+							<h3 className="text-zinc-100 font-medium text-lg mb-4">Quick Links</h3>
+							<div className="space-y-3">
+								<Link href="/projects" className="block text-sm text-zinc-400 hover:text-zinc-100">
+									Projects
+								</Link>
+								<Link href="/solutions" className="block text-sm text-zinc-400 hover:text-zinc-100">
+									Solutions
+								</Link>
+								<Link href="/contact" className="block text-sm text-zinc-400 hover:text-zinc-100">
+									Contact
+								</Link>
+							</div>
+						</div>
+
+						{/* Legal */}
+						<div>
+							<h3 className="text-zinc-100 font-medium text-lg mb-4">Legal</h3>
+							<div className="space-y-3">
+								<Link href="/privacy" className="block text-sm text-zinc-400 hover:text-zinc-100">
+									Privacy Policy
+								</Link>
+								<Link href="/terms" className="block text-sm text-zinc-400 hover:text-zinc-100">
+									Terms of Service
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="border-t border-zinc-800 mt-12 pt-8 text-center text-zinc-400 text-sm">
+						© {new Date().getFullYear()} Bedenker Labs. All rights reserved.
+					</div>
+				</div>
+			</footer>
 		</div>
 	);
 }
