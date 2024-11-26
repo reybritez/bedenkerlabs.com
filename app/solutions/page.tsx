@@ -9,7 +9,10 @@ export default function Solutions() {
 			<Navigation />
 			
 			{/* Hero Section */}
-			<div className="relative h-[80vh] flex items-center justify-center bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+			<div className="relative h-[80vh] flex items-center justify-center bg-gradient-to-b from-[#000000] to-[#1a1a1a]">
+				<div className="absolute inset-0 opacity-30">
+					<div className="absolute inset-0 bg-[url('/hero-background.jpg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+				</div>
 				<div className="relative z-10 text-center px-4 max-w-4xl">
 					<h1 className="text-5xl md:text-7xl font-light text-white mb-6 tracking-tight">
 						Receive Orders via WhatsApp
