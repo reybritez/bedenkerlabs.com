@@ -13,10 +13,10 @@ export default function Solutions() {
 			<div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="max-w-2xl mx-auto lg:mx-0">
 					<h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-						Receive Orders via WhatsApp
+						Receive Orders via WhatsApp.
 					</h1>
 					<p className="mt-4 text-zinc-400">
-						Skip the middleman. Connect directly with your customers.
+						Skip the middleman. Connect directly with your customers. Test our system for FREE.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
@@ -34,7 +34,7 @@ export default function Solutions() {
 						/>
 						<div className="absolute inset-0 bg-black/50 flex items-center justify-center">
 							<Link
-								href="/restaurant"
+								href="https://danasburgers.vercel.app/"
 								className="px-8 py-4 bg-zinc-900 text-zinc-100 rounded-lg hover:bg-zinc-800 transition-colors"
 							>
 								I Have a Restaurant
@@ -53,7 +53,7 @@ export default function Solutions() {
 						/>
 						<div className="absolute inset-0 bg-black/50 flex items-center justify-center">
 							<Link
-								href="/store"
+								href="https://techimoon.vercel.app/"
 								className="px-8 py-4 bg-zinc-900 text-zinc-100 rounded-lg hover:bg-zinc-800 transition-colors"
 							>
 								I Have a Store
@@ -106,10 +106,10 @@ export default function Solutions() {
 						Get your professional store with all the tools you need to grow your business
 					</p>
 					<Link
-						href="/contact"
+						href="https://www.upwork.com/services/product/development-it-a-fantastic-online-menu-to-receive-your-orders-directy-in-whatsapp-1663989489197293568?ref=project_share"
 						className="px-8 py-4 bg-zinc-100 text-zinc-900 rounded-lg hover:bg-zinc-200 transition-colors inline-block"
 					>
-						Contact Us Now
+						Order Now
 					</Link>
 				</div>
 			</div>

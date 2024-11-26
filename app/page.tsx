@@ -38,7 +38,7 @@ export default function Home() {
           [NOW]: You can get a  {" "}
           <Link
             target="_blank"
-            href="https://market.crea.la/product/fantastico-menu-online-para-recibir-tus-pedidos-directamente-en-whatsapp"
+            href="https://www.upwork.com/services/product/development-it-a-fantastic-online-menu-to-receive-your-orders-directy-in-whatsapp-1663989489197293568?ref=project_share"
             className="underline duration-500 hover:text-zinc-300"
           >
             Online Ordering System
